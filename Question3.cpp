@@ -18,6 +18,7 @@ class Library{
     static int total;                //实际馆藏数
 public:
     Library(){
+        
         for(int i =0;i<100;i++)
         {
             *(publications+i) = NULL;
@@ -29,10 +30,10 @@ public:
     }      //添加新馆藏（此函数需完成）
     void show(){                 //输出所有馆藏的相应信息
 	        for(int i=0;i<total;i++)
-	        publications[i]->show();
-    
+	        publications[i]->show();  
 }
-int Library::total = 0;
+
+
 
 	 // show()函数可用于输出所有馆藏的相应信息
      // 如：    C++   zhengli
@@ -43,6 +44,7 @@ int Library::total = 0;
 
      }
     };
+int Library::total = 0;
 
 
 class Book:public Publication{
